@@ -1,0 +1,22 @@
+{
+  "name": "Rowland's LaravelCMS",
+  "version": "0.0.1",
+  "homepage": "https://github.com/rowlandoti/Rowland-LaravelCMS",
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "admin-lte":  "2.2.0",
+    "font-awesome": "~4.3.0",
+    "ionicons": "~2.0.1"
+  }
+}
