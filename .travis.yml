@@ -8,7 +8,6 @@ php:
 
 # Commands to be run before your environment runs.
 before_script:
-  - composer dump-autoload --optimize
   - composer self-update
   - composer install --prefer-source --no-interaction --dev
   - composer dump-autoload --optimize
