@@ -26,7 +26,7 @@ return [
 	|
 	*/
 
-	'url' => 'http://localhost/QS_Web',
+	'url' => 'http://localhost/ooglee-cms',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -149,10 +149,10 @@ return [
 		// Third Party Service Providers
 		'PragmaRX\Firewall\Vendor\Laravel\ServiceProvider',
 		'PragmaRX\Tracker\Vendor\Laravel\ServiceProvider',
-		'Ooglee\Domain\Providers\RouteCmsServiceProvider',
 		'Ooglee\Domain\Providers\OogleeServiceProvider',
 		'Ooglee\Domain\Providers\OogleeBlogServiceProvider',
 		'Ooglee\Domain\Providers\OogleeUserServiceProvider',
+		'Ooglee\Domain\Providers\RouteCmsServiceProvider',
 	],
 
 	/*
