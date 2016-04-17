@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "32e1c717c646190eaa5f5ea60b89c264",
+    "hash": "1e656bf4e29eb31e8d21c5883b1dc466",
     "content-hash": "7cee455422926c106be43110fb5ad3b2",
     "packages": [
         {
@@ -2041,12 +2041,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/RowlandOti/ooglee-blogmodule.git",
-                "reference": "8a2110f4aaab7ea6af493f00d460165cee09d8f8"
+                "reference": "6c953ee9e838d1f6c23efbe4a87ec583d3aa3070"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/RowlandOti/ooglee-blogmodule/zipball/8a2110f4aaab7ea6af493f00d460165cee09d8f8",
-                "reference": "8a2110f4aaab7ea6af493f00d460165cee09d8f8",
+                "url": "https://api.github.com/repos/RowlandOti/ooglee-blogmodule/zipball/6c953ee9e838d1f6c23efbe4a87ec583d3aa3070",
+                "reference": "6c953ee9e838d1f6c23efbe4a87ec583d3aa3070",
                 "shasum": ""
             },
             "require": {
@@ -2057,7 +2057,7 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "Ooglee\\": "src/"
+                    "Ooglee\\": "src/OoGlee"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -2076,7 +2076,7 @@
                 "laravel",
                 "ooglee"
             ],
-            "time": "2016-04-17 07:01:07"
+            "time": "2016-04-17 13:32:35"
         },
         {
             "name": "rowland/ooglee-core",
@@ -2084,12 +2084,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/RowlandOti/ooglee-core.git",
-                "reference": "47b6a3c88cd127b088211d1d928c6bd788e93dda"
+                "reference": "83bc3f5892e32e6dbe28c8742be211319125ddb6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/RowlandOti/ooglee-core/zipball/47b6a3c88cd127b088211d1d928c6bd788e93dda",
-                "reference": "47b6a3c88cd127b088211d1d928c6bd788e93dda",
+                "url": "https://api.github.com/repos/RowlandOti/ooglee-core/zipball/83bc3f5892e32e6dbe28c8742be211319125ddb6",
+                "reference": "83bc3f5892e32e6dbe28c8742be211319125ddb6",
                 "shasum": ""
             },
             "require": {
@@ -2100,7 +2100,7 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "Ooglee\\": "src/"
+                    "Ooglee\\": "src/OoGlee"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -2118,7 +2118,7 @@
                 "blog",
                 "laravel"
             ],
-            "time": "2015-09-15 17:17:33"
+            "time": "2016-04-17 13:34:33"
         },
         {
             "name": "rowland/ooglee-user",
@@ -2126,12 +2126,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/RowlandOti/ooglee-usersmodule.git",
-                "reference": "e99ade7fe1505a0d6695c96dfbc72ab590817986"
+                "reference": "b362bd371098ab18023b3b3b3a344a860170752e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/RowlandOti/ooglee-usersmodule/zipball/e99ade7fe1505a0d6695c96dfbc72ab590817986",
-                "reference": "e99ade7fe1505a0d6695c96dfbc72ab590817986",
+                "url": "https://api.github.com/repos/RowlandOti/ooglee-usersmodule/zipball/b362bd371098ab18023b3b3b3a344a860170752e",
+                "reference": "b362bd371098ab18023b3b3b3a344a860170752e",
                 "shasum": ""
             },
             "require": {
@@ -2142,7 +2142,7 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "Ooglee\\": "src/"
+                    "Ooglee\\": "src/OoGlee"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -2160,7 +2160,7 @@
                 "blog",
                 "laravel"
             ],
-            "time": "2016-04-17 09:25:03"
+            "time": "2016-04-17 13:33:32"
         },
         {
             "name": "snowplow/referer-parser",
