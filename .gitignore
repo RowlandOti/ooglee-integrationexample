@@ -1,6 +1,6 @@
 /bootstrap/compiled.php
 /vendor/*
-!/vendor/composer/
+/vendor/composer/
 
 /resources/assets/vendor
 /resources/lang/vendor
