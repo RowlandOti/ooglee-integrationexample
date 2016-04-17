@@ -4,6 +4,8 @@
 /resources/lang/vendor
 /resources/views/vendor
 
+/database/migrations
+
 
 
 composer.phar
