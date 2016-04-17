@@ -38,11 +38,11 @@
 	"scripts": {
 		"post-install-cmd": [
 			
-			"php artisan optimize"
+			
 		],
 		"post-update-cmd": [
 			
-			"php artisan optimize"
+			
 		],
 		"post-create-project-cmd": [
 			"php -r \"copy('.env.example', '.env');\"",
