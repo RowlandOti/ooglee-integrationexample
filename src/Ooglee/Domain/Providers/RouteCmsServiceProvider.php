@@ -23,7 +23,6 @@ class RouteCmsServiceProvider extends ServiceProvider {
 	public function boot(Router $router)
 	{
 		parent::boot($router);
-
 	}
 
 	/**

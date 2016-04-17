@@ -10,6 +10,7 @@ php:
 before_script:
   - composer self-update
   - composer install --prefer-source --no-interaction --dev
+  - composer dump-autoload --optimize
 # Commands you want to run that will verify your build.
 script: phpunit
 
