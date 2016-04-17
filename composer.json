@@ -27,7 +27,7 @@
 		],
 		"psr-4": {
 			"App\\": "app/",
-			"OoGlee\\": "src/"
+			"Ooglee\\": "src/"
 		}
 	},
 	"autoload-dev": {
