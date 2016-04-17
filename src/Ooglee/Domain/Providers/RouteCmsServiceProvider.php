@@ -3,7 +3,7 @@
 use Illuminate\Routing\Router;
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
 
-class RouteServiceProvider extends ServiceProvider {
+class RouteCmsServiceProvider extends ServiceProvider {
 
 	/**
 	 * This namespace is applied to the controller routes in your routes file.
@@ -36,7 +36,7 @@ class RouteServiceProvider extends ServiceProvider {
 	{
 		$router->group(['namespace' => $this->namespace], function($router)
 		{
-			require app_path('Http/routes.php');
+			require __DIR__.'/../../Framework/Http/routes.php';
 		});
 	}
 

@@ -149,7 +149,7 @@ return [
 		// Third Party Service Providers
 		'PragmaRX\Firewall\Vendor\Laravel\ServiceProvider',
 		'PragmaRX\Tracker\Vendor\Laravel\ServiceProvider',
-		'Ooglee\Domain\Providers\RouteServiceProvider',
+		'Ooglee\Domain\Providers\RouteCmsServiceProvider',
 		'Ooglee\Domain\Providers\OogleeServiceProvider',
 		'Ooglee\Domain\Providers\OogleeBlogServiceProvider',
 		'Ooglee\Domain\Providers\OogleeUserServiceProvider',

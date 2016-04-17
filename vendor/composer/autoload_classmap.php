@@ -1361,7 +1361,7 @@ return array(
     'Ooglee\\Domain\\Providers\\OogleeUserServiceProvider' => $vendorDir . '/rowland/ooglee-user/src/OoGlee/Domain/Providers/OogleeUserServiceProvider.php',
     'Ooglee\\Domain\\Providers\\PostServiceProvider' => $vendorDir . '/rowland/ooglee-blog/src/OoGlee/Domain/Providers/PostServiceProvider.php',
     'Ooglee\\Domain\\Providers\\RouteBlogServiceProvider' => $vendorDir . '/rowland/ooglee-blog/src/OoGlee/Domain/Providers/RouteBlogServiceProvider.php',
-    'Ooglee\\Domain\\Providers\\RouteServiceProvider' => $baseDir . '/src/Ooglee/Domain/Providers/RouteServiceProvider.php',
+    'Ooglee\\Domain\\Providers\\RouteCmsServiceProvider' => $baseDir . '/src/Ooglee/Domain/Providers/RouteCmsServiceProvider.php',
     'Ooglee\\Domain\\Providers\\RouteUserServiceProvider' => $vendorDir . '/rowland/ooglee-user/src/OoGlee/Domain/Providers/RouteUserServiceProvider.php',
     'Ooglee\\Domain\\Providers\\SyncCommandBusServiceProvider' => $vendorDir . '/rowland/ooglee-core/src/OoGlee/Domain/Providers/SyncCommandBusServiceProvider.php',
     'Ooglee\\Domain\\Providers\\UserServiceProvider' => $vendorDir . '/rowland/ooglee-user/src/OoGlee/Domain/Providers/UserServiceProvider.php',

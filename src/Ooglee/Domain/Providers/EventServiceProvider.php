@@ -1,8 +1,6 @@
 <?php namespace Oogle\Domain\Providers;
 
 use Ooglee\Domain\Events\UserRegisteredEvent;
-use Ooglee\Application\Entities\User\Listeners\UserWasRegisteredListener;
-use Ooglee\Application\Entities\User\Listeners\SendWelcomeMailListener;
 use Illuminate\Contracts\Events\Dispatcher as DispatcherContract;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
 
@@ -16,10 +14,7 @@ class EventServiceProvider extends ServiceProvider {
 	 */
 	protected $listen = [
 		
-        UserRegisteredEvent::class => [
-								        UserWasRegisteredListener::class,
-								        SendWelcomeMailListener::class,
-    								  ],
+      
 	];
 
 	/**
