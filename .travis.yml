@@ -1,41 +1,29 @@
 sudo: required
-# Required to run your project under the correct environment.
 language: php
-# Versions of PHP you want your project run with.
 php:
-  - 5.5
-  - 5.6
+- 5.5
+- 5.6
 node_js:
-  - 5.5
-# Install preliminaries
+- 5.5
 install:
-  - npm i -g npm
-  - npm install
-  - composer self-update
-# Commands to be run before your environment runs.
+- npm i -g npm
+- npm install
+- composer self-update
 before_script:
-  - composer install --prefer-source --no-interaction --dev
-  - composer dump-autoload --optimize
-# Commands you want to run that will verify your build.
+- composer install --prefer-source --no-interaction --dev
+- composer dump-autoload --optimize
 script: phpunit
-# allow_failures: Allow this build to fail under the specified environments.
-# fast_finish: If your build fails do not continue trying to build, just stop.
 matrix:
   allow_failures:
-    - php: 5.4
-    - php: hhvm
+  - php: 5.4
+  - php: hhvm
   fast_finish: true
-
-# Customize when the notification emails are sent.
 notifications:
-    on_success: always
-    on_failure: always
+  on_success: always
+  on_failure: always
 env:
   global:
-    -   secure: "YLELFQ9TMxwFqniSEOnEs9Mj6mYLKyw9PwS3t36JJvpaZOFYnQFK4VmYc5eyf9ZskzwDVVkTs6G5rzjxbWylMW0Lorym464a6U2a55SiaSOB4Ayqn01YE4ftbh8n6senfVZO7ht94tmTT9LptuYG8lVnQGu72RfsRd+Xh/dq+spTLVXaRW/3o/8bXsDOwmi1t8wDklMLMVJkSzG5AoPYy/a+x3EMCSVLCvGexBVjctbIg6LjSVz08R1A+wCB+R+FMgUMwkh4hMwUR0zzTF3w2u+9I5MF727TkD7gCeKdiwRyWac+KiJMA4rZAeOKlzMGroigYGYqt4VIBn7EwFGG7AULUNn+IO8c1NYtFT5mczSM4MqnGjBYt1GeaeUM83vm456eBSDKGmOdEh0kLGkmMZJwOK/kA/maYW/EmpvJ3CFciPXDTwCe7ED9rac/gpVeyjhkhzU2pytL9l3JElAWlW3vkiQpUzhJ5XHZXv8mp2uGC/BLiujK90V/aP8J7MvhbmD+IhWq+eLgN0gyklu2WRXDnqLEXzzEbF0wD/AEj2B2MAtZEgH3EK5B2oWTGmGsJxTvOOY+k2oocJgg/2mzWaSVkK05yo5gxCG1VcvJ+DE9nlKiXA3B3WcXsj6KoAB/Luv1Y6O7YFTM7/VJEQStdyYuRsFR6PV09lRIquxKVCs="
-    -   secure: "g5707W8FIQjthfsGcloZg/0oFWBBNsmCFm2k/EEKd84+UhF7HqS53b0NzKzJM2zazK+I27VgVg+FGjlakD/jFKpte7OtIcVt+REKJHAYdWrMVOOkJXKhho8mcwz6/ysjgR12n0gvx1w54Nk5HwPiuxMyEHiso9C+CPyFMHwxgrRisDqAToE4dO7BEfOxO+VLZcISdR5v481K25RNciTHJw9f/GYrowmiWB/kLHVjAVN644H1Lmx//xzvZzGsNhopuZRmXeTbZcfQvfgSvJHBC0pWk2z1oT/7q6iJrt0bFNnbMknbqyHxjC/PmVmC2uEMTNPcTA/Xwnd0Dp/4qoyF47xbiqtwT613oO8RQzmErn5DAykTBygZ1L3qmFS3Z1TeTaMkOt2ZzOn+R+92/bvhpL0XYKXWZ9krjDMQipk68Bo/rmxVjliHEy9IeFPqarTnRmqjaiFYCyEddjI2lk+YCqL7TadNCdA4qsbIQ8KeGGfCGxm4itNnfG127RtPrMXb3RdNGu7/xNqR5o39MadLpIHuxOUVO9nlE8zjYixWN0J4yt8tYghPDDzOWxeI5G7WraZ/YekhcLDtcGwxFeuNQJ5wcvTI/xvdm6ojlMPDZhF432i53Jc5ze3FtSWXil4e579WJfPZVDL8YkI0qsjVsvBTZfbiYmwNfhqrO+OKBZQ="  
+  - secure: 090F0/reMxRnHG3v1XPcKzY7W6zuaUAttIorcKEa2snSkwpjHUNwcc/FRwdX1lSMrr9xpC4Oy2BKfpIYTv1wvn5LgRs5gwpIdtC4cCNIT8mwPxAnabbrEJ0t7AL2SS/G03K+NdpeGJ0i1luvkPMb5F+HoPMfgNYW8t4S5FAtbM6QDP30yT4iJUZ7FA15dGOOJIEE/uA3z96vA0CMfzQR7zptqYYuYkqSNS+y/EIGFRq5zd0IbM0yKIlLDM3Io672uFnO5iwDHthODt6dy413oHd1RtLmU1gzlgW4BGjajNaOhEG6rGXqu64tBbvX5kMhmTm23a02EmHYe9Q67jGrI0dfOLnGtS2S0JRrHebgPDNsHprA40vEb9NVED1rU3TfJGfmR1wN8aMp0Pepxvs2SCFyKT78+OP8nRM3NIJjyUGIlA842d7pOZJ+ngXIGCJJl1CV5zwx1m6JJRImiU1t/iZkeQ3T3iSmG3JVhHszEfliL37pmybjp3yWISea6Mpi3V39QwYNWPBMlX6U5Nr3tKjnWlV6D11AVcXUCN/Rgriwqd+alkM1Cvv4ik3g23Tvdjd9c1uLf5HYTUTnztqpVtDZo2Sw2fDHnh7UWozSquPgIl9GBwNXD6X4sDOoncFrF4HmIFV1Gr7RUWNVPf7BAnNNCpEKeyeRtpR6PfEjM80=
+  - secure: QG6IhsnF+1PWmfcjBma+qfIm3bjpDn7t+0V03JkYyz1PYR67PdEzzfkBsue/RIad2cPiJH3v139SnO1XrQBwFil7WFEchizWZxNNqvpsoi8WthCeHi37QNj0BnUUq9XI047dQMhQ+1nkvLw9EJZ6fPK2u+xIL1H/V4Ep/aQY2hVnpFSvSXoRTdnPptzQSwBOIAvSR3R+KsDTOBJgNn7R4xbyuahY0UUlmVNzYCC3hYdjzO9Dz+MJoM6+Mosjx/Hw7IeU/9vnUWGFqxikWi9Uwoi4Crib7nSJcUUviXgFJqa6OxeIOD2VDwuLRcEO6aIkXydUDGr0yTR23ulG+YNemuQrChTCesH8IISxNMo6P7Sy3cZan2FPj07a2rdh7OKmRXF7VrxSd+zogcy/4ZDDa0vxEZZ+hzYpvD6L7LsPzxeuiJ/qVR2fjCnX5N9sIqppjNZ21F73Ffkrrb5g7p/jX7S0Zxxg0Ja2ZOn3/GgLQpdhO0nf9Whz8ZVR4eDf+f/Qvi4ryoDStzugKNX00UpYsNDg6yRjCr9t1hxJgpIeSFVX0vK3ddqNnvZhh6RlJNCdIaxkFvkmzfycIkAkWSpH6TcLpsWCU26PGqm+mHfcSNXcpbTagrYqah0wXZMHKRY9s6bRfko3XAPaCX6JmZ1j3QqLRXx3RmR24QCN78ZMoyQ=
 after_success:
- # "curl --ftp-create-dirs -T uploadfilename -u $FTP_USER:$FTP_PASSWORD ftp://ftp.skyllabler.com/"
- #  gulp
- #  gulp deploy --user $FTP_USER --password $FTP_PASSWORD
-   - bash scripts/deploy.sh
+- bash .scripts/deploy.sh
