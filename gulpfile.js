@@ -1,5 +1,7 @@
 // Includes
-
+var elixir = require('laravel-elixir');
+var gulp = require("gulp");
+var bower = require("gulp-bower");
 // FTP
 var ftp = require('vinyl-ftp');
 var gutil = require('gulp-util');
