@@ -9,6 +9,7 @@
 
 composer.phar
 
+.keys/deploy_key
 
 .DS_Store
 
