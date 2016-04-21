@@ -9,7 +9,7 @@
 
 composer.phar
 
-.keys/deploy_key
+.keys/deploy_key.pem
 
 .DS_Store
 
