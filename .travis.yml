@@ -9,6 +9,7 @@ node_js:
   - 5.5
 # Install preliminaries
 install:
+  - npm i -g npm
   - npm install
   - composer self-update
 # Commands to be run before your environment runs.
