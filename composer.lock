@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "1e656bf4e29eb31e8d21c5883b1dc466",
-    "content-hash": "7cee455422926c106be43110fb5ad3b2",
+    "hash": "b9060920c3abbe8bb511bac59d323727",
+    "content-hash": "e0b339357344aab5804191ccf9faf3c9",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -743,16 +743,16 @@
         },
         {
             "name": "jaybizzle/crawler-detect",
-            "version": "v1.1.14",
+            "version": "v1.1.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/JayBizzle/Crawler-Detect.git",
-                "reference": "859b3295b572648003f7c3545266b29f11d9cf8b"
+                "reference": "d60127a45ee58dbe3206530f3a134ba2744037e7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JayBizzle/Crawler-Detect/zipball/859b3295b572648003f7c3545266b29f11d9cf8b",
-                "reference": "859b3295b572648003f7c3545266b29f11d9cf8b",
+                "url": "https://api.github.com/repos/JayBizzle/Crawler-Detect/zipball/d60127a45ee58dbe3206530f3a134ba2744037e7",
+                "reference": "d60127a45ee58dbe3206530f3a134ba2744037e7",
                 "shasum": ""
             },
             "require": {
@@ -787,7 +787,7 @@
                 "crawlerdetect",
                 "php crawler detect"
             ],
-            "time": "2016-04-12 21:33:23"
+            "time": "2016-04-18 18:17:39"
         },
         {
             "name": "jenssegers/agent",
@@ -1263,16 +1263,16 @@
         },
         {
             "name": "mobiledetect/mobiledetectlib",
-            "version": "2.8.20",
+            "version": "2.8.21",
             "source": {
                 "type": "git",
                 "url": "https://github.com/serbanghita/Mobile-Detect.git",
-                "reference": "d772569880e7becaec564274a3b93501b3fde700"
+                "reference": "edf31d000b1166e0f78f3498b688c7b11a849499"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/serbanghita/Mobile-Detect/zipball/d772569880e7becaec564274a3b93501b3fde700",
-                "reference": "d772569880e7becaec564274a3b93501b3fde700",
+                "url": "https://api.github.com/repos/serbanghita/Mobile-Detect/zipball/edf31d000b1166e0f78f3498b688c7b11a849499",
+                "reference": "edf31d000b1166e0f78f3498b688c7b11a849499",
                 "shasum": ""
             },
             "require": {
@@ -1313,7 +1313,7 @@
                 "mobile detector",
                 "php mobile detect"
             ],
-            "time": "2016-03-24 09:06:37"
+            "time": "2016-04-18 15:04:00"
         },
         {
             "name": "monolog/monolog",
@@ -1690,16 +1690,16 @@
         },
         {
             "name": "pragmarx/support",
-            "version": "v0.6.5",
+            "version": "v0.6.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/antonioribeiro/support.git",
-                "reference": "aee512c2e2dfaf11ed9872a78f89ad9634636970"
+                "reference": "d793bfc687aed5fbeebfba51218eaef0db0529fe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/antonioribeiro/support/zipball/aee512c2e2dfaf11ed9872a78f89ad9634636970",
-                "reference": "aee512c2e2dfaf11ed9872a78f89ad9634636970",
+                "url": "https://api.github.com/repos/antonioribeiro/support/zipball/d793bfc687aed5fbeebfba51218eaef0db0529fe",
+                "reference": "d793bfc687aed5fbeebfba51218eaef0db0529fe",
                 "shasum": ""
             },
             "require": {
@@ -1740,7 +1740,7 @@
                 "laravel",
                 "pragmarx"
             ],
-            "time": "2016-02-16 14:13:39"
+            "time": "2016-03-31 13:39:34"
         },
         {
             "name": "pragmarx/tracker",
@@ -2041,18 +2041,22 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/RowlandOti/ooglee-blogmodule.git",
-                "reference": "6c953ee9e838d1f6c23efbe4a87ec583d3aa3070"
+                "reference": "2a932bd75eb984cab2b886a9a37cb42467b7b0dc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/RowlandOti/ooglee-blogmodule/zipball/6c953ee9e838d1f6c23efbe4a87ec583d3aa3070",
-                "reference": "6c953ee9e838d1f6c23efbe4a87ec583d3aa3070",
+                "url": "https://api.github.com/repos/RowlandOti/ooglee-blogmodule/zipball/2a932bd75eb984cab2b886a9a37cb42467b7b0dc",
+                "reference": "2a932bd75eb984cab2b886a9a37cb42467b7b0dc",
                 "shasum": ""
             },
             "require": {
                 "illuminate/support": "~5",
                 "php": ">=5.4.0",
                 "rowland/ooglee-core": "dev-master"
+            },
+            "require-dev": {
+                "phpspec/phpspec": "~2.0",
+                "phpunit/phpunit": "~3.7"
             },
             "type": "library",
             "autoload": {
@@ -2076,7 +2080,53 @@
                 "laravel",
                 "ooglee"
             ],
-            "time": "2016-04-17 13:32:35"
+            "time": "2016-04-21 06:18:10"
+        },
+        {
+            "name": "rowland/ooglee-cms",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/RowlandOti/ooglee-cmsmodule.git",
+                "reference": "584421e13574343636d870275e0a877ed4beb2bb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/RowlandOti/ooglee-cmsmodule/zipball/584421e13574343636d870275e0a877ed4beb2bb",
+                "reference": "584421e13574343636d870275e0a877ed4beb2bb",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "~4|~5",
+                "php": ">=5.4.0",
+                "rowland/ooglee-core": "dev-master"
+            },
+            "require-dev": {
+                "phpspec/phpspec": "~2.0",
+                "phpunit/phpunit": "~3.7"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Ooglee\\": "src/OoGlee"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Otieno Rowland",
+                    "email": "rowlandotienoo@gmail.com"
+                }
+            ],
+            "description": "Ooglee platform cms library",
+            "keywords": [
+                "cms",
+                "laravel"
+            ],
+            "time": "2016-04-21 06:36:56"
         },
         {
             "name": "rowland/ooglee-core",
@@ -2084,18 +2134,22 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/RowlandOti/ooglee-core.git",
-                "reference": "83bc3f5892e32e6dbe28c8742be211319125ddb6"
+                "reference": "afddd0a8bddcb4ceab2e48141241c0cb488b66cf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/RowlandOti/ooglee-core/zipball/83bc3f5892e32e6dbe28c8742be211319125ddb6",
-                "reference": "83bc3f5892e32e6dbe28c8742be211319125ddb6",
+                "url": "https://api.github.com/repos/RowlandOti/ooglee-core/zipball/afddd0a8bddcb4ceab2e48141241c0cb488b66cf",
+                "reference": "afddd0a8bddcb4ceab2e48141241c0cb488b66cf",
                 "shasum": ""
             },
             "require": {
                 "illuminate/support": "~4|~5",
                 "laravelcollective/html": "5.1.*",
                 "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "phpspec/phpspec": "~2.0",
+                "phpunit/phpunit": "~3.7"
             },
             "type": "library",
             "autoload": {
@@ -2118,7 +2172,7 @@
                 "blog",
                 "laravel"
             ],
-            "time": "2016-04-17 13:34:33"
+            "time": "2016-04-17 14:41:04"
         },
         {
             "name": "rowland/ooglee-user",
@@ -2126,18 +2180,22 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/RowlandOti/ooglee-usersmodule.git",
-                "reference": "b362bd371098ab18023b3b3b3a344a860170752e"
+                "reference": "06630611f40eee6f8c7b5422b06fb4e9815dcf66"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/RowlandOti/ooglee-usersmodule/zipball/b362bd371098ab18023b3b3b3a344a860170752e",
-                "reference": "b362bd371098ab18023b3b3b3a344a860170752e",
+                "url": "https://api.github.com/repos/RowlandOti/ooglee-usersmodule/zipball/06630611f40eee6f8c7b5422b06fb4e9815dcf66",
+                "reference": "06630611f40eee6f8c7b5422b06fb4e9815dcf66",
                 "shasum": ""
             },
             "require": {
                 "illuminate/support": "~5",
                 "php": ">=5.4.0",
                 "rowland/ooglee-core": "dev-master"
+            },
+            "require-dev": {
+                "phpspec/phpspec": "~2.0",
+                "phpunit/phpunit": "~3.7"
             },
             "type": "library",
             "autoload": {
@@ -2160,7 +2218,7 @@
                 "blog",
                 "laravel"
             ],
-            "time": "2016-04-17 13:33:32"
+            "time": "2016-04-21 06:13:21"
         },
         {
             "name": "snowplow/referer-parser",
@@ -4399,7 +4457,8 @@
     "stability-flags": {
         "rowland/ooglee-core": 20,
         "rowland/ooglee-blog": 20,
-        "rowland/ooglee-user": 20
+        "rowland/ooglee-user": 20,
+        "rowland/ooglee-cms": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

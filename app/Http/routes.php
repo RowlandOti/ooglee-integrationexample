@@ -12,21 +12,7 @@
 */
 
 // Application routes
-Route::group(['namespace' => 'Application'], function()
-{
-    Route::get('/', ['as' => 'root', 'uses' => 'HomeController@index']);
-});
-
-// Admin routes
-Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function()
-{
-    Route::group(['middleware' => 'auth'], function() 
-    {
-        Route::get('/', ['as' => 'admin.root', 'uses' => 'DashboardController@index']);
-    });
-});
-
-Route::controllers([
-	'auth' => 'Auth\AuthController',
-	'password' => 'Auth\PasswordController',
-]);
+ Route::group(['namespace' => 'Application'], function()
+ {
+     Route::get('/', ['as' => 'root', 'uses' => 'HomeController@index']);
+ });

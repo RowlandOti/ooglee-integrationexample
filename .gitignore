@@ -5,8 +5,7 @@
 /resources/views/vendor
 
 /database/migrations
-
-
+/database/seeds
 
 composer.phar
 
@@ -22,6 +21,7 @@ composer.phar
 
 
 /node_modules
+/bower_modules
 
 
 .env

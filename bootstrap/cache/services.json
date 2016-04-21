@@ -26,13 +26,14 @@
         "App\\Providers\\BusServiceProvider",
         "App\\Providers\\ConfigServiceProvider",
         "App\\Providers\\EventServiceProvider",
+        "App\\Providers\\RouteServiceProvider",
         "App\\Providers\\AnnotationsServiceProvider",
         "PragmaRX\\Firewall\\Vendor\\Laravel\\ServiceProvider",
         "PragmaRX\\Tracker\\Vendor\\Laravel\\ServiceProvider",
         "Ooglee\\Domain\\Providers\\OogleeBlogServiceProvider",
         "Ooglee\\Domain\\Providers\\OogleeServiceProvider",
         "Ooglee\\Domain\\Providers\\OogleeUserServiceProvider",
-        "Ooglee\\Domain\\Providers\\RouteCmsServiceProvider"
+        "Ooglee\\Domain\\Providers\\OogleeCmsServiceProvider"
     ],
     "eager": [
         "Illuminate\\Auth\\AuthServiceProvider",
@@ -50,13 +51,14 @@
         "App\\Providers\\BusServiceProvider",
         "App\\Providers\\ConfigServiceProvider",
         "App\\Providers\\EventServiceProvider",
+        "App\\Providers\\RouteServiceProvider",
         "App\\Providers\\AnnotationsServiceProvider",
         "PragmaRX\\Firewall\\Vendor\\Laravel\\ServiceProvider",
         "PragmaRX\\Tracker\\Vendor\\Laravel\\ServiceProvider",
         "Ooglee\\Domain\\Providers\\OogleeBlogServiceProvider",
         "Ooglee\\Domain\\Providers\\OogleeServiceProvider",
         "Ooglee\\Domain\\Providers\\OogleeUserServiceProvider",
-        "Ooglee\\Domain\\Providers\\RouteCmsServiceProvider"
+        "Ooglee\\Domain\\Providers\\OogleeCmsServiceProvider"
     ],
     "deferred": {
         "command.app.name": "Illuminate\\Foundation\\Providers\\ArtisanServiceProvider",

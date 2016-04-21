@@ -143,7 +143,7 @@ return [
 		'App\Providers\BusServiceProvider',
 		'App\Providers\ConfigServiceProvider',
 		'App\Providers\EventServiceProvider',
-		//'App\Providers\RouteServiceProvider',
+		'App\Providers\RouteServiceProvider',
 		'App\Providers\AnnotationsServiceProvider',
 
 		// Third Party Service Providers
@@ -152,7 +152,7 @@ return [
 		'Ooglee\Domain\Providers\OogleeBlogServiceProvider',
 		'Ooglee\Domain\Providers\OogleeServiceProvider',
 		'Ooglee\Domain\Providers\OogleeUserServiceProvider',
-		'Ooglee\Domain\Providers\RouteCmsServiceProvider',
+		'Ooglee\Domain\Providers\OogleeCmsServiceProvider',
 	],
 
 	/*
