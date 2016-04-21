@@ -10,6 +10,8 @@
 composer.phar
 
 .keys/deploy_key.pem
+.keys/id_rsa
+.keys/id_rsa.pub
 
 .DS_Store
 
