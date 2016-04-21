@@ -38,4 +38,5 @@ after_success:
  # "curl --ftp-create-dirs -T uploadfilename -u $FTP_USER:$FTP_PASSWORD ftp://ftp.skyllabler.com/"
  #  gulp
  #  gulp deploy --user $FTP_USER --password $FTP_PASSWORD
-  script: .scripts/deploy.sh
+  script: 
+  - bash .scripts/deploy.sh
