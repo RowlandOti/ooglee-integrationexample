@@ -5,15 +5,16 @@ language: php
 php:
   - 5.5
   - 5.6
+  - hhvm
 
-before_install: if [[ `npm -v` != 3* ]]; then npm i -g npm@3; fi
+before_install: 
+  - npm install
+
 # Commands to be run before your environment runs.
 before_script:
   - composer self-update
   - composer install --prefer-source --no-interaction --dev
   - composer dump-autoload --optimize
-  - npm install
-  - npm install
 # Commands you want to run that will verify your build.
 script: phpunit
 
@@ -21,7 +22,7 @@ script: phpunit
 # fast_finish: If your build fails do not continue trying to build, just stop.
 matrix:
   allow_failures:
-    - php: 5.6
+    - php: 5.4
     - php: hhvm
   fast_finish: true
 
@@ -32,7 +33,7 @@ notifications:
 env:
   global:
     -   secure: "YLELFQ9TMxwFqniSEOnEs9Mj6mYLKyw9PwS3t36JJvpaZOFYnQFK4VmYc5eyf9ZskzwDVVkTs6G5rzjxbWylMW0Lorym464a6U2a55SiaSOB4Ayqn01YE4ftbh8n6senfVZO7ht94tmTT9LptuYG8lVnQGu72RfsRd+Xh/dq+spTLVXaRW/3o/8bXsDOwmi1t8wDklMLMVJkSzG5AoPYy/a+x3EMCSVLCvGexBVjctbIg6LjSVz08R1A+wCB+R+FMgUMwkh4hMwUR0zzTF3w2u+9I5MF727TkD7gCeKdiwRyWac+KiJMA4rZAeOKlzMGroigYGYqt4VIBn7EwFGG7AULUNn+IO8c1NYtFT5mczSM4MqnGjBYt1GeaeUM83vm456eBSDKGmOdEh0kLGkmMZJwOK/kA/maYW/EmpvJ3CFciPXDTwCe7ED9rac/gpVeyjhkhzU2pytL9l3JElAWlW3vkiQpUzhJ5XHZXv8mp2uGC/BLiujK90V/aP8J7MvhbmD+IhWq+eLgN0gyklu2WRXDnqLEXzzEbF0wD/AEj2B2MAtZEgH3EK5B2oWTGmGsJxTvOOY+k2oocJgg/2mzWaSVkK05yo5gxCG1VcvJ+DE9nlKiXA3B3WcXsj6KoAB/Luv1Y6O7YFTM7/VJEQStdyYuRsFR6PV09lRIquxKVCs="
-    -   secure: "g5707W8FIQjthfsGcloZg/0oFWBBNsmCFm2k/EEKd84+UhF7HqS53b0NzKzJM2zazK+I27VgVg+FGjlakD/jFKpte7OtIcVt+REKJHAYdWrMVOOkJXKhho8mcwz6/ysjgR12n0gvx1w54Nk5HwPiuxMyEHiso9C+CPyFMHwxgrRisDqAToE4dO7BEfOxO+VLZcISdR5v481K25RNciTHJw9f/GYrowmiWB/kLHVjAVN644H1Lmx//xzvZzGsNhopuZRmXeTbZcfQvfgSvJHBC0pWk2z1oT/7q6iJrt0bFNnbMknbqyHxjC/PmVmC2uEMTNPcTA/Xwnd0Dp/4qoyF47xbiqtwT613oO8RQzmErn5DAykTBygZ1L3qmFS3Z1TeTaMkOt2ZzOn+R+92/bvhpL0XYKXWZ9krjDMQipk68Bo/rmxVjliHEy9IeFPqarTnRmqjaiFYCyEddjI2lk+YCqL7TadNCdA4qsbIQ8KeGGfCGxm4itNnfG127RtPrMXb3RdNGu7/xNqR5o39MadLpIHuxOUVO9nlE8zjYixWN0J4yt8tYghPDDzOWxeI5G7WraZ/YekhcLDtcGwxFeuNQJ5wcvTI/xvdm6ojlMPDZhF432i53Jc5ze3FtSWXil4e579WJfPZVDL8YkI0qsjVsvBTZfbiYmwNfhqrO+OKBZQ="
+    -   secure: "g5707W8FIQjthfsGcloZg/0oFWBBNsmCFm2k/EEKd84+UhF7HqS53b0NzKzJM2zazK+I27VgVg+FGjlakD/jFKpte7OtIcVt+REKJHAYdWrMVOOkJXKhho8mcwz6/ysjgR12n0gvx1w54Nk5HwPiuxMyEHiso9C+CPyFMHwxgrRisDqAToE4dO7BEfOxO+VLZcISdR5v481K25RNciTHJw9f/GYrowmiWB/kLHVjAVN644H1Lmx//xzvZzGsNhopuZRmXeTbZcfQvfgSvJHBC0pWk2z1oT/7q6iJrt0bFNnbMknbqyHxjC/PmVmC2uEMTNPcTA/Xwnd0Dp/4qoyF47xbiqtwT613oO8RQzmErn5DAykTBygZ1L3qmFS3Z1TeTaMkOt2ZzOn+R+92/bvhpL0XYKXWZ9krjDMQipk68Bo/rmxVjliHEy9IeFPqarTnRmqjaiFYCyEddjI2lk+YCqL7TadNCdA4qsbIQ8KeGGfCGxm4itNnfG127RtPrMXb3RdNGu7/xNqR5o39MadLpIHuxOUVO9nlE8zjYixWN0J4yt8tYghPDDzOWxeI5G7WraZ/YekhcLDtcGwxFeuNQJ5wcvTI/xvdm6ojlMPDZhF432i53Jc5ze3FtSWXil4e579WJfPZVDL8YkI0qsjVsvBTZfbiYmwNfhqrO+OKBZQ="  
 after_success:
   gulp
   gulp deploy --user $FTP_USER --password $FTP_PASSWORD
