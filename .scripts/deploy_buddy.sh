@@ -2,7 +2,7 @@
 #Deploy to git
 
 export REPO_PATH=git@github.com:RowlandOti/deploy-zone.git
-export COMMIT_MSG="deploy: Automated deploy to server"
+export COMMIT_MSG="deploy: Automated Deploy to Server with Commit: "
 export COMMIT_USER="Travis-Bot-RowlandOti"
 export COMMIT_EMAIL="travis-bot@rowlandoti.com"
 # Extract the commit message
@@ -14,6 +14,6 @@ git config --global user.email "${COMMIT_EMAIL}"
 git config --global user.name "${COMMIT_USER}"
 git init
 git add --all .
-git commit -am "${COMMIT_MSG} - ${TRAVIS_COMMIT_MSG} with changeset ${CHANGESET}"
+git commit -am "${COMMIT_MSG} ${TRAVIS_COMMIT_MSG} and changeset: ${CHANGESET}"
 git remote add deploy ${REPO_PATH}
 git push deploy

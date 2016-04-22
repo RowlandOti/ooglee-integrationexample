@@ -3,6 +3,8 @@ language: php
 php:
 - 5.5
 - 5.6
+before_install:
+- bash .scripts/configure_ssh.sh
 install:
 - composer self-update
 before_script:
@@ -23,5 +25,3 @@ env:
   - secure: QG6IhsnF+1PWmfcjBma+qfIm3bjpDn7t+0V03JkYyz1PYR67PdEzzfkBsue/RIad2cPiJH3v139SnO1XrQBwFil7WFEchizWZxNNqvpsoi8WthCeHi37QNj0BnUUq9XI047dQMhQ+1nkvLw9EJZ6fPK2u+xIL1H/V4Ep/aQY2hVnpFSvSXoRTdnPptzQSwBOIAvSR3R+KsDTOBJgNn7R4xbyuahY0UUlmVNzYCC3hYdjzO9Dz+MJoM6+Mosjx/Hw7IeU/9vnUWGFqxikWi9Uwoi4Crib7nSJcUUviXgFJqa6OxeIOD2VDwuLRcEO6aIkXydUDGr0yTR23ulG+YNemuQrChTCesH8IISxNMo6P7Sy3cZan2FPj07a2rdh7OKmRXF7VrxSd+zogcy/4ZDDa0vxEZZ+hzYpvD6L7LsPzxeuiJ/qVR2fjCnX5N9sIqppjNZ21F73Ffkrrb5g7p/jX7S0Zxxg0Ja2ZOn3/GgLQpdhO0nf9Whz8ZVR4eDf+f/Qvi4ryoDStzugKNX00UpYsNDg6yRjCr9t1hxJgpIeSFVX0vK3ddqNnvZhh6RlJNCdIaxkFvkmzfycIkAkWSpH6TcLpsWCU26PGqm+mHfcSNXcpbTagrYqah0wXZMHKRY9s6bRfko3XAPaCX6JmZ1j3QqLRXx3RmR24QCN78ZMoyQ=
 after_success:
 - bash .scripts/deploy_buddy.sh
-before_install:
-- bash .scripts/configure_ssh.sh
