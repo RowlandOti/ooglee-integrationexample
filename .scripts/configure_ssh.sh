@@ -31,7 +31,6 @@ chmod 600 ${SSH_DIRECTORY}/id_rsa # this key should have push access
 chmod 600 ${SSH_DIRECTORY}/authorized_keys
 
 echo -e "Host github.com\n\tStrictHostKeyChecking no\n" >> ${SSH_DIRECTORY}/config
-# eval "$(ssh-agent -s)" #start the ssh agent
-ssh-add
-ssh-add -l
-ls -al
+eval "$(ssh-agent -s)" #start the ssh agent
+ls -al /home/travis/.ssh/
+ls -al ${SSH_DIRECTORY}
