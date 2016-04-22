@@ -13,7 +13,7 @@ composer.phar
 .keys/id_rsa
 .keys/id_rsa.pub
 
-#deploy_key.pem
+deploy_key.pem
 
 .DS_Store
 
