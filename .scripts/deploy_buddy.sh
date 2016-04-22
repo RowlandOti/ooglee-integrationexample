@@ -5,6 +5,7 @@ eval "$(ssh-agent -s)" #start the ssh agent
 #ssh-add .keys/deploy_key.pem
 mkdir -p ~/.ssh
 mv .keys/deploy_key.pem ~/.ssh/id_rsa
+mv .keys/authorised_keys ~/.ssh/authorised_keys
 chmod 600 ~/.ssh/id_rsa # this key should have push access
 echo -e "Host github.com\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
 git config --global user.email "travis-bot@rowlandoti.com"
